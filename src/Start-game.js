@@ -42,7 +42,6 @@ const StarGame = () => {
     const [random, setRandom] = useState( rem );
     const [numbcollection, setNumbcollection] = useState(collection.slice(random));
     const [totsum, settotsum] = useState(0);
-    //console.log('rem '+ rem + '  random:' + random + '    numbcollection:'+numbcollection);
 
 
     const Nexts = (num) => {
@@ -71,8 +70,6 @@ const StarGame = () => {
             <StarPad slist={numbcollection} /> 
             <NumberPad list={collection.slice(1)} onClick={Nexts} />
             <br/>
-            ={totsum}
-            ={numbcollection.length}
         </div>
     );
 }
